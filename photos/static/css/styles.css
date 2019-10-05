@@ -1,0 +1,9 @@
+.h{
+    color: aqua;
+}
+.t{
+    background-image: url('https://cdn.pixabay.com/photo/2019/10/02/14/09/jam-4521023__340.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+}

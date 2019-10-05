@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% if title %}
+    <title>Galerie-{{title}}</title>
+    [% else%]
+    <title> Galerie</title>
+    {% endif %}
+
+    {% block styles %}
+   
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  {% endblock %}
+
+</head>
+<body class="t">
+    {% block content%}
+
+<h1>  {{ date|date:"1 d-F Y"}}</h1>
+
+{% endblock %}
+
+</body>
+</html>
