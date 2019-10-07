@@ -1,5 +1,18 @@
 {% include 'base.html' %}
 
-<div class="">
-    <h1 class="h"> Welcome to Gallery</h1>
+{{super}}
+    <h1 class="h"> Welcome to my Gallery</h1>
+   <div class="container">
+
+
+    <div class="row">
+{% for data in images %}
+<!-- Displaying the images -->
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+<img src="{{data.image.url}}" class="img-responsive" alt="Image">
+<p> {{ data.images.title}} </p>
+    </div>
 </div>
+</div>
+{% endfor %}

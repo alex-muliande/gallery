@@ -20,6 +20,13 @@ class Category(models.Model):
     def __str__(self):
         return self.category
 
+    def save_category(self):
+        self.save()
+
+    @classmethod
+    def delete_category(cls,category):
+        cls.objects.filter(category=category).delete()
+
 class Image(models.Model):
     title =models.CharField(max_length =60)
     post_date = models.DateTimeField(auto_now_add=True)
@@ -27,5 +34,20 @@ class Image(models.Model):
     category= models.ForeignKey(Category)
     image = models.ImageField(upload_to ='images/' ,default='DEFAULT VALUE')
 
+    def __str__(self):
+        return self.title
 
+    def save_image(self):
+        self.save()
+
+    @classmethod    
+    def all_images(cls):
+        images = cls.objects.all()
+        return images
+
+    @classmethod 
+    def search_by_category(cls,search_term):
+        images= cls.objects.filter(categories_category=search_term)
+
+        return images
     
