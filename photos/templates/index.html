@@ -9,10 +9,28 @@
 {% for data in images %}
 <!-- Displaying the images -->
 
-<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-<img src="{{data.image.url}}" class="img-responsive" alt="Image">
-<p> {{ data.images.title}} </p>
-    </div>
+<!-- Card -->
+<div class="col-md-3">
+<div class="card">
+
+        <!-- Card image -->
+        <img class="card-img-top" src="{{data.image.url}}" alt="Card image cap">
+      
+        <!-- Card content -->
+        <div class="card-body">
+      
+          <!-- Title -->
+          <h4 class="card-title" style="text-align: center"><a>{{ data.title}}</a></h4>
+          <!-- Text -->
+          <!-- Button -->
+          <!-- <a href="#" class="btn btn-primary">Button</a> -->
+      
+        </div>
+      
+      </div>
+      <!-- Card -->
+
+</div>
 </div>
 </div>
 {% endfor %}
