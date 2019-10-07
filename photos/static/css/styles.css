@@ -1,61 +1,12 @@
 .h{
     color: aqua;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
 }
 .t{
-    background-image: url('https://cdn.pixabay.com/photo/2019/10/02/14/09/jam-4521023__340.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/25/20/01/gallery-2681238_960_720.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 450px;
+    height: 750px;
 }
 
-#img:hover {
-    opacity: 0.5;
- }
- .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding: 100px 0px 0px 0px;
-    width: 100%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    overflow: auto;
- }
- .modal-content {
-    display: block;
-    width: 80%;
-    margin: auto;
- }
- #caption {
-    margin: auto;
-    display: auto;
-    width: 80%;
-    color: #ffffff;
- }
- .modal-content,
- #caption {
-    animation-name: zoom;
-    animation-duration: 0.5s;
- }
- @keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
- }
- .close {
-    position: absolute;
-    color: #ffffff;
-    font-weight: bold;
-    transition: 0.3s;
-    font-size: 80px;
-    top: 50px;
-    right: 20px;
- }
- .close:hover,
- .close:focus {
-    color:red;
-    text-decoration: none;
- }

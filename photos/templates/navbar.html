@@ -9,8 +9,8 @@
 <body>
     
     <nav class="navbar navbar-dark default-color justify-content-between">
-        <a class="navbar-brand" href="http://127.0.0.1:8000/admin/">Admin</a>
-        <a class="navbar-brand" href="{{data.category}}">Categories</a>
+        <a class="navbar-brand" href="{% url 'index' %}">Galerie</a>
+        
 
         <form class="form-inline my-1" role="search" action="{% url 'search_results' %}">
           <div class="md-form form-sm my-0">
