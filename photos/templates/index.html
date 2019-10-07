@@ -6,29 +6,48 @@
     <div class="row">
 
 
-
         {% for data in images %}
-        <div class="col-md-3">
-            <div class="card">
+<!-- Button trigger modal -->
 
-                <!-- Card image -->
-                <img class="card-img-top" src="{{data.image.url}}" alt="Card image cap">
-
-                <!-- Card content -->
-                <div class="card-body">
-
-                    <!-- Title -->
-                    <h4 class="card-title" style="text-align: center"><a>{{ data.title}}</a></h4>
-                    <!-- Text -->
-                    <!-- Button -->
-                    <!-- <a href="#" class="btn btn-primary">Button</a> -->
-
-                </div>
-
+      
+      <!-- Modal -->
+      <div class="modal fade" id="basicExampleModal{{data.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">{{data.title}}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <!-- Card -->
+            <div class="modal-body">
+                    <img class="card-img-top" id="img" class="mode" src="{{data.image.url}}" alt="Card image cap">
+                    <p>{{data.location}} {{data.category}}</p>
+            </div>
+            <div class="modal-footer">
+                <input type="text" value="{{data.image.url}}"id={{data.id}}.url>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save </button>
+            </div>
+          </div>
         </div>
+      </div>
+        <div class="col-md-3">
+
+            <div class="card">
+                   <img src ="{{data.image.url}}" height='200vh' data-toggle="modal" data-target="#basicExampleModal{{data.id}}">
+
+                <div class="card-body">
+                    <h4 class="card-title" style="text-align: center"><a>{{ data.title}}</a></h4>
+                </div>
+            </div>
+        </div>
+
+
         {% endfor %}
 
+        <!-- Modal -->
+  
     </div>
 </div>

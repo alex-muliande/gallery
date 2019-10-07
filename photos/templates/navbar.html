@@ -10,6 +10,8 @@
     
     <nav class="navbar navbar-dark default-color justify-content-between">
         <a class="navbar-brand" href="http://127.0.0.1:8000/admin/">Admin</a>
+        <a class="navbar-brand" href="{{data.category}}">Categories</a>
+
         <form class="form-inline my-1" role="search" action="{% url 'search_results' %}">
           <div class="md-form form-sm my-0">
             <input class="form-control form-control-sm mr-sm-2 mb-0" type="text" placeholder="Search"
