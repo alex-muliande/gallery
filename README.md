@@ -1,5 +1,13 @@
 ### Gallerie
+### Description
 ##### Gallerie is a platform where users can display their photos for others to see, they can share the photos by coping the photo link and also add different categories of photo..
+
+### Author
+Alex Muliande
+
+
+### Screenshot
+<img src=" " width="1000">
 
 ### Requirements
 ##### These are the requirements you need to get the project running locally on your machine:
