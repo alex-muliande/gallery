@@ -7,7 +7,7 @@ Alex Muliande
 
 
 ### Screenshot
-<img src=" " width="1000">
+<img src="https://github.com/alex-muliande/gallery/blob/master/Screenshot%20from%202019-10-07%2023-35-07.png " width="1000">
 
 ### Requirements
 ##### These are the requirements you need to get the project running locally on your machine:
