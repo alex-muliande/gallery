@@ -1,5 +1,5 @@
-### Photo-Gallery
-##### Photo-gallery is a platform where users can display their photos for others to see, they can share the photos by coping the photo link and also add different categories of photo. Their friends can like the photos too.
+### Gallerie
+##### Gallerie is a platform where users can display their photos for others to see, they can share the photos by coping the photo link and also add different categories of photo..
 
 ### Requirements
 ##### These are the requirements you need to get the project running locally on your machine:
@@ -17,11 +17,11 @@
 ##### Open the command-line and run the following command to open a directory:
   - ```cd your preferred directory``` => ```cd Desktop```
 ##### Git clone the project on your current directory by:
-  - ```git clone https://github.com/IreneMercy/Photo-Gallery```.
+  - ```git clone https://github.com/alex-muliande/gallery.git```.
 ##### Open the project on your terminal:
   - ```atom . or code .``` , according to the type of your text editor.
 ##### Move to your project directory:
-  - ```cd Photo-Gallery```.
+  - ```cd Gallery```.
 ##### Install virtual environment using python:
   - ```python3.6 -m venv virtual```, check your project to confirm you have a folder called virtual,
   - then activate it by running ```source virtual/bin/activate```
@@ -32,7 +32,7 @@
   - ```import django```
   - And lastly ```django.get_version()``` to see and confirm the version of django installed.
   - You can then ```ctrl z``` to get out of the shell,
-##### After ensuring you have all the above
+##### After confirming you have all this
   - ```python3 manage.py runserver``` to run the project.
   - Then click the local host link given to open the project on a browser ```http://127.0.0.1:8000/```.
 
@@ -69,4 +69,4 @@
 [MIT](LICENSE)
 
 ### Contact
-##### alenad425@gmail.com
+##### alexnad425@gmail.com
