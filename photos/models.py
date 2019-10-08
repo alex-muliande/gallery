@@ -24,6 +24,11 @@ class Category(models.Model):
         self.save()
 
     @classmethod
+    def get_all_categories(cls):
+        categ = cls.objects.all()
+        return categ
+
+    @classmethod
     def delete_category(cls,category):
         cls.objects.filter(category=category).delete()
 
