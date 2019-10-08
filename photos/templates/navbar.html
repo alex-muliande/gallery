@@ -10,6 +10,14 @@
     
     <nav class="navbar navbar-dark default-color justify-content-between">
         <a class="navbar-brand" href="{% url 'index' %}">Galerie</a>
+        <p>I'm here</p>
+        {% for category in categories %}
+        <a class="navbar-brand" href="{% url 'category' category.id %}">
+          <p>{{category.category}}</p>
+          
+        </a>
+        {% endfor %}
+        
         
 
         <form class="form-inline my-1" role="search" action="{% url 'search_results' %}">
